@@ -5,8 +5,8 @@ class Solution:
         numSet = set(nums)
         longest = 0
 
-        for n in nums:
-            if n - 1 not in nums: # indicates start of sequence since neighbor below doesnt exist
+        for n in numSet:
+            if n - 1 not in numSet: # indicates start of sequence since neighbor below doesnt exist
                 seqLength = 1 # seq is at least length 1
                 
                 while seqLength + n in nums:

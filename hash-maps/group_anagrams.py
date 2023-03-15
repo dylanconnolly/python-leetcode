@@ -12,7 +12,7 @@ class Solution:
                 hash[alphabetized] = [string]
                 
         result = []
-        
+
         for v in hash.values():
             result.append(v)
             
