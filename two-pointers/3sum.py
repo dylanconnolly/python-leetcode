@@ -24,7 +24,7 @@ class Solution:
                 else:
                     result.append([a, nums[l], nums[r]])
                     l += 1
-                    r -= 1
+                    # r -= 1  // dont actually need since right point will be moved when left + right is greater than 0 (removing chance of duplicates)
                     while nums[l] == nums[l - 1] and l < r:
                         l += 1
         return result
